@@ -14,31 +14,82 @@
     </header>
     <main>
         <section class="big-photo">
-            <div class="center-items">
-                    <div class="content">
-                        <div class="price-container">
+                        <div class="product-price">
                             <p>$399,99</p>
                         </div>
-                        <img src="assets/image.png" alt="">
-                        <div class="description">
-                            <h2>Tenis tal</h1>
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                        </div>
                         
+                        <img src="assets/image.png" class="product-image">
+
+                        <div class="product-description">
+                            <h2>Tenis tal</h1>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
                     </div>
-                    
-                
             </div>
         </section>
+        
         <section class="products">
-            <div class="cube" id="c1"></div>
-            <div class="cube" id="c2"></div>
-            <div class="cube" id="c3"></div>
-            <div class="cube" id="c4"></div>
+            <div class="cube" id="c1">
+                <div class="catalog-product-price">
+                    <h6>$799,99</h6>
+                </div>
+                
+                <img src="assets/image.png" class="product-image">
+                
+                <div class="catalog-product-description">
+                    <h4>Tenis tal</h4>
+                </div>
+            </div>
+            <div class="cube" id="c2">
+                <div class="catalog-product-price">
+                    <h6>$1.299,99</h6>
+                </div>
+                
+                <img src="assets/image.png" class="product-image">
+                
+                <div class="catalog-product-description">
+                    <h4>Tenis tal</h4>
+                </div>
+            </div>
+            <div class="cube" id="c3">
+                <div class="catalog-product-price">
+                    <h6>$126,99</h6>
+                </div>
+                
+                <img src="assets/image.png" class="product-image">
+                
+                <div class="catalog-product-description">
+                    <h4>Tenis tal</h4>
+                </div>
+            </div>
+            <div class="cube" id="c4">
+                <div class="catalog-product-price">
+                    <h6>$799,99</h6>
+                </div>
+                
+                <img src="assets/image.png" class="product-image">
+                
+                <div class="catalog-product-description">
+                    <h4>Tenis tal</h4>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
 
     </footer>
+
+    <div class="center-popup" id="centerPopUp">
+        <dialog open>
+            <h5 onclick="closePopUp()">X</h5>
+            <h1>Cupom 15% OFF</h1>
+            <p>Se inscreva e receba ofertas em primeira mão pelo seu email!</p>
+            <input type="text" id="nameInput" placeholder="Name...">
+            <input type="text" id="emailInput" placeholder="Email...">
+            <input type="button" value="Send" id="sendInput" onclick="closePopUp('send')">
+        </dialog>
+    </div>
+
+    <script src="Main.js"></script>
 </body>
 </html>

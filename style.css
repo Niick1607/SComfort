@@ -1,105 +1,104 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-:root{
+:root {
     --azul: #1f8da5;
     --amarelo: #ffc876;
 }
 
-body{
+body {
+    background-color: var(--amarelo);
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow: hidden;
 }
 
-header{
+/*/////////////NAVBAR////////////*/
+
+header {
     width: 100vw;
     height: 9vh;
 }
 
-nav{
+nav {
     background-color: var(--amarelo);
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     height: 100%;
     width: 100%;
 }
 
-nav img{
+nav img {
     width: 21vw;
 }
 
-.big-photo{
-    background-color: #b6e4fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 62vh;
-}
+/*/////////////SHOWCASE////////////*/
 
-.center-items{
+.big-photo {
+    position: relative;
+    background-color: #b6e4fb;
+    height: 55vh;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10vw;
+
     display: flex;
     flex-direction: column;
+
+}
+
+.product-price {
+    background-color: var(--azul);
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
 
+    width: 22vw;
+    height: 22vw;
+}
+
+.product-description {
+    bottom: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.product-image {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
-.content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    width: 80vw;
-  }
-
-.price-container{
-    background-color: #4eb6ea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 5px 10px;
-
-    width: 18vw;
-    height: 18vw;
+.product-price p {
+    color: #f3f3f5;
+    font-size: 5.4vw;
 }
 
-.description{
-    
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-p{
-    font-size: 5.4vw; 
- }
- 
- h2{
+h2 {
     font-size: 7.4vw;
- }
+    text-align: end;
+}
 
- h3{
+h3 {
     font-size: 4.8vw;
     text-align: end;
- }
-
-.center-items img{
-    width: 70vw;
 }
+
 
 /*/////////////PRODUCTS-CONTAINER////////////*/
 
-.products{
+.products {
     width: 100vw;
     height: 100vw;
     display: grid;
@@ -107,15 +106,123 @@ p{
     grid-template-rows: 1fr 1fr;
 }
 
-#c1{
+.cube {
+    width: auto;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3vw 6vw;
+
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 2s;
+}
+
+.catalog-product-price{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 22vw;
+    height: 22vw;
+}
+
+.catalog-product-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 23px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#c1 {
     background-color: #d7c4eb;
 }
-#c2{
+
+#c2 {
     background-color: #ffeeb1;
 }
-#c3{
+
+#c3 {
     background-color: #f3f3f5;
 }
-#c4{
+
+#c4 {
     background-color: #ffced3;
+}
+
+/*/////////////POP-UP////////////*/
+
+.center-popup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+dialog {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: linear-gradient(to right, var(--azul), var(--amarelo));
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: none;
+    padding: 4vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+
+    width: 80vw;
+}
+
+dialog h1 {
+    color: black;
+}
+
+dialog h5 {
+    font-size: 22px;
+    color: black;
+    transition: 0.5s;
+}
+
+dialog h5:hover {
+    transform: rotate(180deg);
+    color: red;
+}
+
+dialog p {
+    color: black;
+}
+
+dialog input {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 1vw;
+
+    width: 60%;
+}
+
+dialog input::placeholder {
+    color: black;
+    font-size: 110%;
 }
