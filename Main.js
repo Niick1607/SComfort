@@ -11,6 +11,7 @@ function loadProducts() {
         }, delay);
         delay+=250;
     });
+    
 }
 
 function closePopUp(x) {
@@ -19,8 +20,12 @@ function closePopUp(x) {
     if (x === 'send'){
         const name = document.getElementById('nameInput').value;
         const email = document.getElementById('emailInput').value;
-        console.log(name, email);
+        console.log(`${name}, ${email}`);
     }
 }
 
 loadProducts();
+window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+});

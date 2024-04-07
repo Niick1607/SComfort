@@ -34,7 +34,8 @@ nav {
 }
 
 nav img {
-    width: 21vw;
+    /* width: 21%; */
+    height: 100%;
 }
 
 /*/////////////SHOWCASE////////////*/
@@ -42,7 +43,7 @@ nav img {
 .big-photo {
     position: relative;
     background-color: #b6e4fb;
-    height: 55vh;
+    height: 60vh;
     margin: 0 auto;
     overflow: hidden;
     padding: 10vw;
@@ -59,8 +60,8 @@ nav img {
     justify-content: center;
     align-items: center;
 
-    width: 22vw;
-    height: 22vw;
+    width: 22%;
+    height: 20%;
 }
 
 .product-description {
@@ -82,7 +83,7 @@ nav img {
 
 .product-price p {
     color: #f3f3f5;
-    font-size: 5.4vw;
+    font-size: 140%;
 }
 
 h2 {
@@ -137,11 +138,11 @@ h3 {
 }
 
 h6 {
-    font-size: 20px;
+    font-size: 120%;
 }
 
 h4 {
-    font-size: 23px;
+    font-size: 120%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -161,6 +162,31 @@ h4 {
 
 #c4 {
     background-color: #ffced3;
+}
+
+/*/////////////FOOTER////////////*/
+
+footer {
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+
+    height: 7vh;
+}
+
+footer a {
+    height: 100%;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    height: 70%;
+    width: auto;
 }
 
 /*/////////////POP-UP////////////*/
