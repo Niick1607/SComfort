@@ -4,6 +4,11 @@ const closeX = document.querySelector("h4");
 const popUp = document.getElementById("centerPopUp");
 let delay = 300;
 
+window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+});
+
 function loadProducts() {
     document.querySelectorAll(".cube").forEach(function(cube){
         setInterval(function() {
@@ -25,7 +30,3 @@ function closePopUp(x) {
 }
 
 loadProducts();
-window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-});
