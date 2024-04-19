@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SCOMFORT</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/logo.png" alt="">
+        </nav>
+    </header>
+    <main>
+        <section class="big-photo">
+                        <div class="product-price">
+                            <p>$399,99</p>
+                        </div>
+                        
+                        <img src="assets/snkrs/showcase.png" class="product-image">
+
+                        <div class="product-description">
+                            <h2>Running Confort+++</h1>
+                        <h3>Com nossa linha Running Confort, o conforto e a velocidade se encontram!</h3>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section class="products-container">
+            <div class="center-title">
+                <h1>Produtos:</h1>
+            </div>
+
+            <div class="products">
+                <div class="cube" id="c1">
+                    <div class="catalog-product-price">
+                        <h6>R$799,99</h6>
+                    </div>
+                    
+                    <img src="assets/snkrs/c1.png" class="product-image">
+                    
+                    <div class="catalog-product-description">
+                        <h4>Brown Confort+</h4>
+                    </div>
+                </div>
+                <div class="cube" id="c2">
+                    <div class="catalog-product-price">
+                        <h6>R$829,99</h6>
+                    </div>
+                    
+                    <img src="assets/snkrs/c2.png" class="product-image">
+                    
+                    <div class="catalog-product-description">
+                        <h4>Air Confort</h4>
+                    </div>
+                </div>
+                <div class="cube" id="c3">
+                    <div class="catalog-product-price">
+                        <h6>R$326,99</h6>
+                    </div>
+                    
+                    <img src="assets/snkrs/c3.png" class="product-image">
+                    
+                    <div class="catalog-product-description">
+                        <h4>White Confort++</h4>
+                    </div>
+                </div>
+                <div class="cube" id="c4">
+                    <div class="catalog-product-price">
+                        <h6>R$699,99</h6>
+                    </div>
+                    
+                    <img src="assets/snkrs/c4.png" class="product-image">
+                    
+                    <div class="catalog-product-description">
+                        <h4>VlSz Confort+</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <a href="https://www.facebook.com/?locale=pt_BR">
+                <img src="assets/redes/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="assets/redes/instagram.png" alt="instagram">
+            </a>
+            <a href="https://twitter.com/login?lang=pt">
+                <img src="assets/redes/twitter.png" alt="twitter">
+            </a>
+        
+        <div class="options">
+            <a href="https://m.youtube.com/watch?v=vRtaBgkZc74">
+                <h7>Quem somos?</h7>
+            </a>
+
+            <a href="https://api.whatsapp.com/send/?phone=5511400232340000&text&type=phone_number&app_absent=0">
+                <h7>Contato!</h7>
+            </a>
+            
+            <a href="">
+                <h7>Trabalhe consoco!</h7>
+            </a>
+        </div>
+    </footer>
+
+    <div class="center-popup" id="centerPopUp">
+        <dialog open>
+            <h5 onclick="closePopUp()">X</h5>
+            <h1>Cupom 15% OFF</h1>
+            <p>Se inscreva e receba ofertas em primeira mão pelo seu email!</p>
+            <input type="text" id="nameInput" placeholder="Name...">
+            <input type="text" id="emailInput" placeholder="Email...">
+            <input type="button" value="Send" id="sendInput" onclick="closePopUp('send')">
+        </dialog>
+    </div>
+
+    <script src="Main.js"></script>
+</body>
+</html>
